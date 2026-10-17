@@ -12,3 +12,11 @@
 .field-notes{display:block;width:100%;box-sizing:border-box;min-height:150px;margin:22px 0 10px;padding:16px;border:1px solid var(--line);border-radius:8px;background:#172b30;color:var(--text);font:inherit;line-height:1.6;resize:vertical}
 .exercise-hint{font-size:14px!important}
 @media(max-width:520px){.order-row{flex-wrap:wrap}.order-row span{flex-basis:100%}}
+
+.novera-glossary{margin:24px 0;padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.glossary-heading h2{font-size:28px;margin:8px 0}
+.glossary-heading p{color:var(--muted);font-size:14px}
+.glossary-terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin:16px 0 0}
+.glossary-terms>div{padding:12px;border:1px solid var(--line);border-radius:8px;background:#172b30}
+.glossary-terms dt{font-weight:700;color:var(--accent)}
+.glossary-terms dd{margin:5px 0 0;font-size:14px;line-height:1.5}
