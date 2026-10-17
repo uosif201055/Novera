@@ -56,3 +56,5 @@ CREATE TABLE IF NOT EXISTS accounts (
  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 -- Teacher role assignment must be restricted to approved administrators.
+
+UPDATE foundations SET description='land and everything naturally found on or beneath it' WHERE id='lithra';
