@@ -40,3 +40,19 @@ ON CONFLICT(id) DO NOTHING;
 INSERT INTO chapters (id,foundation_id,title,summary,position,published)
 VALUES ('chapter-1',NULL,'meet the world','an introduction to lithra aethra hydria and observation',1,TRUE)
 ON CONFLICT(id) DO NOTHING;
+
+-- chapter 000 retains its existing id for compatibility with earlier progress.
+UPDATE chapters SET title='introduction', summary='meet novera and the three foundations', position=0 WHERE id='chapter-1';
+INSERT INTO chapters(id,foundation_id,title,summary,position,published)
+VALUES('chapter-001','lithra','lithra','observe ground and natural solid materials',1,TRUE)
+ON CONFLICT(id) DO NOTHING;
+
+-- account design: authentication and authorization are required before these are used publicly.
+CREATE TABLE IF NOT EXISTS accounts (
+ id UUID PRIMARY KEY,
+ email TEXT NOT NULL UNIQUE,
+ password_hash TEXT NOT NULL,
+ role TEXT NOT NULL DEFAULT 'learner' CHECK(role IN ('learner','teacher')),
+ created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+-- Teacher role assignment must be restricted to approved administrators.
