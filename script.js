@@ -22,5 +22,5 @@ const percent = progress.completed ? 100 : Math.min(80,Math.max(0,Number(progres
 document.getElementById("learning-fill").style.width = percent+"%";
 document.getElementById("learning-percent").textContent = percent+"%";
 document.getElementById("learning-track").setAttribute("aria-valuenow",String(percent));
-document.getElementById("learning-status").textContent = progress.completed ? "chapter 1 completed" : percent ? "chapter 1 in progress" : "chapter 1 not started";
-document.getElementById("learning-link").textContent = progress.completed ? "review chapter 1 ↗" : percent ? "continue chapter 1 ↗" : "start chapter 1 ↗";
+document.getElementById("learning-status").textContent = progress.completed ? "chapter 000 completed" : percent ? "chapter 000 in progress" : "chapter 000 not started";
+document.getElementById("learning-link").textContent = progress.completed ? "review chapter 000 ↗" : percent ? "continue chapter 000 ↗" : "start chapter 000 ↗";
