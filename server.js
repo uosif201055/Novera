@@ -28,4 +28,4 @@ app.put("/api/learners/:id/progress/:chapter",async(req,res)=>{
  }catch(e){res.status(400).json({error:"invalid request or database unavailable"})}
 });
 app.use(express.static(path.join(__dirname)));
-app.listen(Number(process.env.PORT)||3000,()=>console.log("novera running on http://localhost:"+(Number(process.env.PORT)||3000)));
+app.listen(Number(process.env.PORT)||4173,()=>console.log("novera running on http://localhost:"+(Number(process.env.PORT)||4173)));
