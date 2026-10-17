@@ -1,5 +1,5 @@
 const foundations = [
-  { number: "01", name: "lithra", symbol: "◈", description: "exploring the land beneath us including rocks soil and solid materials" },
+  { number: "01", name: "lithra", symbol: "◈", description: "land and everything naturally found on or beneath it" },
   { number: "02", name: "aethra", symbol: "≋", description: "exploring air weather motion and the atmosphere above us" },
   { number: "03", name: "hydria", symbol: "◉", description: "exploring water its behavior and its role in the natural world" }
 ];
