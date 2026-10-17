@@ -6,7 +6,7 @@ install node js and postgresql and create an empty database named novera
 2. copy `.env.example` to `.env` and set your own postgres credentials
 3. run `npm run db:init`
 4. run `npm start`
-5. open http://localhost:3000/api/health
+5. open http://localhost:4173/api/health
 
 ## api
 
