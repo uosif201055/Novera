@@ -18,7 +18,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Chapters are registered once here; progress is read separately for each one.
 const chapters = [
   {id:"000",name:"introduction",url:"chapter-1.html",key:"novera.chapter1",parts:5},
-  {id:"001",name:"lithra",url:"chapter-001.html",key:"novera.chapter001",parts:14}
+  {id:"001",name:"lithra",url:"chapter-001.html",key:"novera.chapter001",parts:16}
 ];
 // Future chapters are added to this catalog when their lessons are published.
 function getChapterProgress(chapter) {
